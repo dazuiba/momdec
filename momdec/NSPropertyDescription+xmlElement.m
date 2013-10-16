@@ -17,7 +17,7 @@
         [exception raise];
         return nil;
     }
-    NSXMLElement *element = [NSXMLElement elementWithName:@""];
+    NSXMLElement *element = [NSXMLElement elementWithName:@"attribute"];
     [element addAttribute:[NSXMLNode attributeWithName:@"name" stringValue:[self name]]];
     if ([self isOptional]) {
         [element addAttribute:[NSXMLNode attributeWithName:@"optional" stringValue:@"YES"]];
